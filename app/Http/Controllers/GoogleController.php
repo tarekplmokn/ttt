@@ -23,12 +23,17 @@ class GoogleController extends Controller
             $finduser = User::where('gauth_id', $user->id)->first();
             $finduser = User::where('gauth_id', $user->id)->first();
             $finduser = User::where('gauth_id', $user->id)->first();
+            $finduser = User::where('gauth_id', $user->id)->first();
+            $finduser = User::where('gauth_id', $user->id)->first();
+            $finduser = User::where('gauth_id', $user->id)->first();
+            $finduser = User::where('gauth_id', $user->id)->first();
       
             if($finduser){
       
                 Auth::login($finduser);
      
                 return redirect('/dashboard');
+                
       
             }else{
                 $newUser = User::create([
@@ -47,5 +52,6 @@ class GoogleController extends Controller
         } catch (Exception $e) {
             dd($e->getMessage());
         }
+        
     }
 }
