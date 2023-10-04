@@ -20,6 +20,9 @@ class GoogleController extends Controller
             $user = Socialite::driver('google')->user();
       
             $finduser = User::where('gauth_id', $user->id)->first();
+            $finduser = User::where('gauth_id', $user->id)->first();
+            $finduser = User::where('gauth_id', $user->id)->first();
+            $finduser = User::where('gauth_id', $user->id)->first();
       
             if($finduser){
       
